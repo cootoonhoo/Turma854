@@ -61,6 +61,7 @@ namespace APIProdutos.Controllers
             if (produtos == null)
                 return NotFound();
 
+            _repositoryProduto.UpdateProduto(id, produto);
             return NoContent();
         }
 
